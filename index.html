@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms JS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="logo">
+    <a class="logo__link" href="#">home<span>W</span>orks</a>
+</div>
+
+<div class="container">
+    <section class="form">
+        <div class="form__wrapper">
+            <h1 class="form__title" id="formTitle">Get your free account</h1>
+            <p class="form__subtitle">Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever)
+                anytime.</p>
+            <form action="" class="form__action" id="form">
+                <label class="form__label" id="label-fullName">Full Name
+                    <input type="text" id="full-name" class="form__input" placeholder="Antony Swarowski">
+                </label>
+                <label class="form__label">Your username
+                    <input type="text" id="username" class="form__input">
+                </label>
+                <label class="form__label" id="label-email">E-mail
+                    <input type="email" id="email" class="form__input">
+                </label>
+                <label class="form__label">Password
+                    <input type="password" id="password1" class="form__input">
+                </label>
+                <label class="form__label" id="label-repeatPassword">Repeat Password
+                    <input type="password" id="password2" class="form__input">
+                </label>
+                <label class="form__label  form__label-checkbox" id="label-checkbox">
+                    <input type="checkbox" id="check" class="form__input form__input-checkbox">Agree to our Terms of
+                    Service and Privacy Statement
+                </label>
+                <div class="wrapper-btn">
+                    <button class="btn-submit" id="button" type="submit">
+                        Sign Up
+                    </button>
+                </div>
+            </form>
+            <a href="" class="question" id="link-question">Already have an account?</a>
+        </div>
+    </section>
+
+    <section class="rocket">
+        <div class="rocket__image">
+            <img class="rocket__image-img" src="images/image.png" alt="Rocket">
+        </div>
+    </section>
+
+
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию
+            <button class="popup-button" id="popup-close">OK</button>
+        </div>
+
+    </div>
+
+</div>
+<script src="scripts/script.js"></script>
+
+</body>
+</html>
