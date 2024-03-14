@@ -21,22 +21,34 @@
             <form action="" class="form__action" id="form">
                 <label class="form__label" id="label-fullName">Full Name
                     <input type="text" id="full-name" class="form__input" placeholder="Antony Swarowski">
+                    <div class="error-input">Full Name может содержать только буквы и пробел</div>
                 </label>
-                <label class="form__label">Your username
+                <label class="form__label">Your Username
                     <input type="text" id="username" class="form__input">
+                    <div class="error-input">Username может содержать буквы, цифры, символ подчеркивания и тире</div>
                 </label>
                 <label class="form__label" id="label-email">E-mail
-                    <input type="email" id="email" class="form__input">
+                    <input type="email" id="email" class="form__input ">
+                    <div class="error-input">Заполните поле E-mail корректно</div>
                 </label>
                 <label class="form__label">Password
-                    <input type="password" id="password1" class="form__input">
+                    <input type="password" id="password1" class="form__input ">
+                    <div class="error-input">Password должен содержать минимум 8 символов, среди которых есть:
+                        <ul>
+                            <li>- хотя бы одна буква в верхнем регистре</li>
+                            <li>- хотя бы одна цифра</li>
+                            <li>- хотя бы один спецсимвол</li>
+                        </ul>
+                    </div>
                 </label>
                 <label class="form__label" id="label-repeatPassword">Repeat Password
                     <input type="password" id="password2" class="form__input">
+                    <div class="error-input">Password и Repeat Password должны совпадать</div>
                 </label>
                 <label class="form__label  form__label-checkbox" id="label-checkbox">
                     <input type="checkbox" id="check" class="form__input form__input-checkbox">Agree to our Terms of
                     Service and Privacy Statement
+                    <div class="error-input">Пользователь должен согласиться с условиями</div>
                 </label>
                 <div class="wrapper-btn">
                     <button class="btn-submit" id="button" type="submit">
@@ -53,7 +65,6 @@
             <img class="rocket__image-img" src="images/image.png" alt="Rocket">
         </div>
     </section>
-
 
 
     <div class="popup" id="popup">

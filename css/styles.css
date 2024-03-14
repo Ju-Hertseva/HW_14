@@ -85,15 +85,18 @@ body {
     line-height: 27px;
     margin-bottom: 20px;
 }
+
 .form__input{
     border: transparent;
     border-bottom: 1px solid #C6C6C4;
     height: 25px;
+    padding-left: 5px;
     background-color: #fdfdfa;
     font-size: 20px;
     line-height: 27px;
     font-family: NunitoBold, sans-serif;
 }
+
 .form__input::placeholder{
     color: #323232;
 }
@@ -109,6 +112,20 @@ body {
     position: absolute;
     top: 1px;
     left: -25px;
+}
+.error-input {
+    color: #b30909;
+    margin-bottom: 15px;
+    font-size: 12px;
+    display: none;
+}
+.invalid{
+    border: 2px solid #FF0000FF;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px rgba(227,22,46,0.64);
+}
+.error-input li {
+    margin-bottom: -15px;
 }
 .wrapper-btn{
     display: flex;
