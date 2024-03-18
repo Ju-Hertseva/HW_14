@@ -179,6 +179,7 @@ window.onload = function () {
     }
 
     function goToLoginPage() {
+        document.getElementById('form').reset();
         document.getElementById('formTitle').innerText = 'Log in to the system';
         document.getElementById('label-fullName').style.display = 'none';
         document.getElementById('label-email').style.display = 'none';
